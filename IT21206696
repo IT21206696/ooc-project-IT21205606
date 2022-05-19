@@ -1,0 +1,82 @@
+//Sihil
+//Chef
+
+//chef.h
+class chef{
+	private:
+		int chefID;
+		
+	public:
+	    chef(int cID);
+	    void displayDetails(report * r);
+	    ~chef();
+};
+
+//chef.cpp
+#include<iostream>
+#include<cstring>
+
+using namespace std;
+
+Chef::Chef(int cId)
+{
+	chefID = cID;
+}
+
+void Chef::displayDetails(report * r)
+{
+	cout << "Chef ID :" << chefID << endl;
+}
+
+Chef::~Chef()
+{
+	
+}
+
+
+//Report
+
+//report.h
+class report{
+	private:
+		int reportID;
+		
+	public:
+		report(int rID);
+		void createRecipeReport();
+		void createPaymentReport();
+		void createAccountReport();
+		void displayReport();
+		~report();
+};
+
+//report.cpp
+#include<iostream>
+#include<cstring>
+
+using namespace std;
+
+Report::Report(int rID)
+{
+	reportID = rID;
+}
+
+void Report::createRecipeReport()
+{
+	
+}
+
+void Report::createPaymentReport()
+{
+	
+}
+
+void Report::displayReport()
+{
+	cout << "Report ID :" << reportID << endl;
+}
+
+Report::~Report()
+{
+	
+}
